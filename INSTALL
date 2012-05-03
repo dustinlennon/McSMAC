@@ -1,0 +1,38 @@
+--------------------------------------------------------
+Installation
+--------------------------------------------------------
+
+The McSMAC code is posted on github.  It is intended to be fairly 
+easy to install for POSIX systems.  Windows users, you are out of 
+luck.  McSMAC will not run on a windows machine.
+
+--------------------------------------------------------
+License Issues with the Multicore Workqueue
+--------------------------------------------------------
+
+The multicore component of McSMAC depends on a workqueue 
+implementation borrowed, without permission, from David Butenhof's 
+text, ``Programming With POSIX® Threads.''  This code can be 
+downloaded from the author's website, however, there is no 
+explicit licensing documentation available.  Therefore, any person 
+compiling or using McSMAC with dependencies on the workqueue code 
+does so at their own peril and agrees to accept any and all legal 
+risks associated with such use.  Unless you make a conscious 
+decision to enable the Butenhof workqueue, McSMAC will run as a 
+single thread.
+
+--------------------------------------------------------
+Instructions to Enable the Butenhof WorkQueue
+--------------------------------------------------------
+
+To enable the Butenhof dependencies, follow the instructions in 
+the Makefile.  You will have toenable a build flag in the Makefile, 
+manually download the files, and apply the patch.
+
+--------------------------------------------------------
+Building on a Mac
+--------------------------------------------------------
+
+See the comments in the Makefile.  There is a comment and 
+corresponding build flag that can be used.  This is experimental, 
+with only light testing on Mac OS X.
