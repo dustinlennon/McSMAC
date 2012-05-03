@@ -1,6 +1,7 @@
 \documentclass[letterpaper]{article}
 \title {Multicore Stochastic Mapping Analysis Calculator\\McSMAC}
-\author {Dustin Lennon}
+\author {Dustin Lennon\\
+  \texttt{dustin.lennon [at] gmail.com}}
 
 \usepackage[margin=1in]{geometry
 }\usepackage{amsmath}
